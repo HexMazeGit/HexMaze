@@ -65,6 +65,7 @@ def f_Get_TimeStamps (str_videoName,str_SaveName):
         str_TimeStamp = str(num_ts)
 
         # TODO: Ask Mutu about Median intensity function ...
+        # TODO: ask Mutu about validations
         blue_intensity, red_intensity = get_led_intensities(cap, frame)
         # Prepare Data in string to write
         row = [str(frame_index),str_TimeStamp,str_CurrFrame,str_PrevFrame,str(blue_intensity),str(red_intensity)]
